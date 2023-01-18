@@ -29,6 +29,8 @@ form.addEventListener('submit', function(e){
     const nivelImc = getNivelImc(imc);
 
     console.log(imc, nivelImc )
+    const msg = `seu IMC: ${imc} nivel: (${nivelImc})`
+    setResultado(msg, true);
 });
 
 function getNivelImc(imc){
@@ -74,6 +76,11 @@ function setResultado(msg, isValid){
     // reset da tag(cache)
     resultado.innerHTML = '';
     const p = criarP();
+
+    if(isValid){
+        p.classList.add('paragrafo-resultado')
+    }
+
     p.innerHTML = msg;
     resultado.appendChild(p)
     
