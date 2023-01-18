@@ -79,6 +79,8 @@ function setResultado(msg, isValid){
 
     if(isValid){
         p.classList.add('paragrafo-resultado')
+    }else{
+        p.classList.add('paragrafo-resultado-bad')
     }
 
     p.innerHTML = msg;

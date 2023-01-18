@@ -76,7 +76,7 @@ form input[type="text"]{
     font-weight: bold;
 }
 /* formatação do resultado */
-.paragrafo-resultado{
+.paragrafo-resultado, .paragrafo-resultado-bad{
     background-color: rgba(33, 129, 254,0.6);
     padding:  0.4rem 10px;
     border: solid rgba(33, 129, 254,0.6) 2px;
@@ -84,4 +84,8 @@ form input[type="text"]{
     color: white;
     text-align: center;
     margin-top: 2rem;
+}
+
+.paragrafo-resultado-bad{
+    background-color: rgba(251, 46, 46, 0.575);
 }
